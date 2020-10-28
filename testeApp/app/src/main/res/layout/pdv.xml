@@ -18,7 +18,7 @@
         android:id="@+id/imageView"
         android:layout_width="112dp"
         android:layout_height="216dp"
-        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteX="283dp"
         tools:layout_editor_absoluteY="-4dp"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/imageView"
         android:layout_width="112dp"
         android:layout_height="216dp"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="-4dp"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="-3dp"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 </androidx.constraintlayout.widget.ConstraintLayout>

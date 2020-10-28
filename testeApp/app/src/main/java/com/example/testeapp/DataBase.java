@@ -22,14 +22,14 @@ public class DataBase extends SQLiteOpenHelper {
      private static final String COLUMN_PASSWORD = "Password";
 
 
-    public DataBase(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+    public DataBase(@Nullable Context context) {
         super(context, NAME_BASE, null, VERSION_BASE);
 
     }
     /*CREATOR OF DATABASE*/
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String QUERY_COLUMN = "CREATE TABLE" + TABLE_BASE + "("+ COLUMN_CPF + " INTEGER PRIMARY KEY," + COLUMN_ADRESS +" TEXT," + COLUMN_DATE +" INTEGER," + COLUMN_EMAIL + " TEXT," + COLUMN_NAME + " TEXT," + COLUMN_PASSWORD + " INTEGER)";
+        String QUERY_COLUMN = "CREATE TABLE," + TABLE_BASE + "("+ COLUMN_CPF + " INTEGER PRIMARY KEY," + COLUMN_ADRESS +" TEXT," + COLUMN_DATE +" INTEGER," + COLUMN_EMAIL + " TEXT," + COLUMN_NAME + " TEXT," + COLUMN_PASSWORD + " INTEGER)";
 
         db.execSQL(QUERY_COLUMN);
     }
@@ -43,7 +43,16 @@ public class DataBase extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put(COLUMN_EMAIL, client.getEmail());
+        values.put(COLUMN_PASSWORD, client.getPswd());
+        values.put(COLUMN_NAME, client.getName());
+        values.put(COLUMN_CPF, client.getCpf());
+        values.put(COLUMN_DATE, client.getDate());
+        values.put(COLUMN_ADRESS, client.getAdress());
 
+
+        db.insert(tb_Clients, null, Values);
+        db.close();
 
     }
 

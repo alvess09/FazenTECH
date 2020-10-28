@@ -7,7 +7,7 @@ public class Client {
 
  }
  //CONSTRUCTOR
- public Client(int_cpf, int_date, String_name, String_adress, String_email, String_pswd){
+ public Client(Integer_cpf, Integer_date, String_name, String_adress, String_email, String_pswd){
     this.cpf = _cpf;
     this.date =_date;
     this.name =_name;
@@ -64,3 +64,4 @@ public class Client {
         this.pswd = pswd;
     }
 }
+

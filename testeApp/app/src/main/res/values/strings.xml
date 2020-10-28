@@ -6,5 +6,11 @@
     <string name="button">Login</string>
     <string name="login_btn">Entrar</string>
     <string name="cadastro_btn">Fazer Cadastro</string>
+    <string name="peixe">Peixe</string>
+    <string name="laranja">Laranja</string>
+    <string name="todo">TODO</string>
+    <string name="melancia">Melancia</string>
+    <string name="leite">Leite</string>
+
 
 </resources>

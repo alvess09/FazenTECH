@@ -8,19 +8,6 @@
     tools:layout_editor_absoluteY="81dp">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="355dp"
-        android:layout_height="58dp"
-        android:
-        android:background="@color/colorPrimary"
-        android:text="@string/cadastro_btn"
-        android:textAlignment="center"
-        android:textColor="@color/colorWhite"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="569dp" />
-
-    <Button
         android:id="@+id/button3"
         android:layout_width="355dp"
         android:layout_height="58dp"
@@ -30,14 +17,26 @@
         android:textColor="@color/colorDark"
         android:visibility="visible"
         tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="494dp" />
+        tools:layout_editor_absoluteY="332dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="355dp"
+        android:layout_height="58dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/cadastro_btn"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="408dp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="412dp"
+        android:layout_height="229dp"
         app:srcCompat="@drawable/fazentech_logo"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="48dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="6dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

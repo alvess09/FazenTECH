@@ -1,0 +1,32 @@
+package com.example.fazentech;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class produto3 extends AppCompatActivity {
+    int quantidade = 0;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.produto03);
+    }
+
+    public void somar(View view){
+        quantidade= quantidade + 1;
+        displayQuantidade(quantidade);
+    }
+
+    public void subtrair(View view){
+        quantidade = quantidade - 1;
+        displayQuantidade(quantidade);
+    }
+
+    public void displayQuantidade(int qtdpedido02){
+        TextView qtdTextview = (TextView) findViewById(R.id.quantidade_tv);
+        qtdTextview.setText("" + qtdpedido02);
+    }
+
+}

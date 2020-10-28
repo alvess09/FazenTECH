@@ -5,11 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText editemail, editpswd, editname, editadress, editnasc;
     Button btnsave;
     Button btnclean;
+
+    DataBase db;
+    {
+        db = new DataBase(this);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +31,11 @@ public class MainActivity extends AppCompatActivity {
         btnsave = (Button)findViewById(R.id.btnsave);
         btnclean = (Button)findViewById(R.id.btnclean);
 
+        /* TESTE DO CRUD  */
+        db.addClient(new Client("arielalves9@gmail.com","1234","Ariel","05671707560","30081994","rua 1,teste") );
+        Toast.makeText(MainActivity.this, "Cadastro Salvo com Sucesso! ", Toast.LENGTH_LONG).show();
+
+
     }
+
 }

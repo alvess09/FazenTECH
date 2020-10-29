@@ -1,4 +1,4 @@
-package com.example.fazentech;
+package com.example.testeapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+
+import com.example.testeapp.R;
 
 public class product extends AppCompatActivity {
     CardView leite;
@@ -21,33 +23,33 @@ public class product extends AppCompatActivity {
         leite = findViewById(R.id.leite);
         melancia= findViewById(R.id.melancia);
         laranja = findViewById(R.id.laranja);
-        limao = findViewById(R.id.limao);
+        limao = findViewById(R.id.limão);
 
         leite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(product.this, com.example.fazentech.produto1.class));
+                startActivity(new Intent(product.this, com.example.testeapp.produto1.class));
 
             }
         });
         melancia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(product.this, com.example.fazentech.produto2.class));
+                startActivity(new Intent(product.this, com.example.testeapp.produto2.class));
             }
         });
 
         laranja.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(product.this, com.example.fazentech.produto3.class));
+                startActivity(new Intent(product.this, com.example.testeapp.produto3.class));
 
             }
         });
-        limão.setOnClickListener(new View.OnClickListener() {
+        limao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(product.this, com.example.fazentech.produto4.class));
+                startActivity(new Intent(product.this, com.example.testeapp.produto4.class));
 
             }
         });

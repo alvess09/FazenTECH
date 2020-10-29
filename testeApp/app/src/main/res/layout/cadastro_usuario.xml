@@ -1,159 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="611dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsave" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="355dp"
         android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="10dp"
         android:text="Criar Cadastro"
         android:textAlignment="center"
         android:textColor="@color/colorDark"
         android:textSize="23dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <EditText
-        android:id="@+id/editpswd"
-        android:layout_width="353dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="143dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="353dp"
-        android:layout_height="17dp"
-        android:text="Data de Nascimento"
-        android:textColor="@color/colorDark"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="347dp" />
-
-    <EditText
-        android:id="@+id/editemail"
-        android:layout_width="353dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="64dp" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="353dp"
-        android:layout_height="19dp"
-        android:text="Endereço Completo"
-        android:textColor="@color/colorDark"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="410dp" />
-
-    <EditText
-        android:id="@+id/editcpf"
-        android:layout_width="353dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="289dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="352dp"
-        android:layout_height="19dp"
-        android:text="Email"
-        android:textColor="@color/colorDark"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="46dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="353dp"
-        android:layout_height="19dp"
-        android:text="Cpf"
-        android:textColor="@color/colorDark"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="271dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="353dp"
-        android:layout_height="19dp"
-        android:text="Senha"
-        android:textColor="@color/colorDark"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="124dp" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="353dp"
-        android:layout_height="19dp"
-        android:text="Nome"
-        android:textColor="@color/colorDark"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="195dp" />
-
-    <EditText
-        android:id="@+id/editname"
-        android:layout_width="355dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="215dp" />
-
-    <EditText
-        android:id="@+id/editadress"
-        android:layout_width="355dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="429dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="353dp"
-        android:layout_height="40dp"
-        android:background="@color/colorPrimary"
-        android:text="Button"
-        android:textAlignment="center"
-        android:textColor="@color/colorWhite"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="547dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnsave"
         android:layout_width="145dp"
         android:layout_height="45dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="10dp"
         android:background="@color/colorPrimaryDark"
         android:text="Salvar"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="482dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnclean"
         android:layout_width="150dp"
         android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="600dp"
         android:background="@color/colorSecondaryDark"
         android:text="Limpar"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="482dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editnasc"
-        android:layout_width="353dp"
-        android:layout_height="40dp"
+        android:layout_width="365dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="508dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:inputType="date"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/editpswd"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="353dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="10dp"
+        android:text="Data de Nascimento"
+        android:textColor="@color/colorDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="353dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="353dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="10dp"
+        android:text="Endereço Completo"
+        android:textColor="@color/colorDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editcpf"
+        android:layout_width="353dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="352dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="10dp"
+        android:text="Email"
+        android:textColor="@color/colorDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="353dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="10dp"
+        android:text="Cpf"
+        android:textColor="@color/colorDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="10dp"
+        android:text="Senha"
+        android:textColor="@color/colorDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="353dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="284dp"
+        android:text="Nome"
+        android:textColor="@color/colorDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editadress"
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="448dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>

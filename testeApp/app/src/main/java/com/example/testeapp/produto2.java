@@ -1,10 +1,12 @@
-package com.example.fazentech;
+package com.example.testeapp;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.testeapp.R;
 
 public class produto2 extends AppCompatActivity {
     int quantidade = 0;

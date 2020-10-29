@@ -778,12 +778,11 @@ id blocking
 id bottom
 id btnCredito
 id btnDebito
+id btncadastrar
 id btnclean
+id btnentrar
 id btnsave
-id button
 id button2
-id button3
-id button4
 id button5
 id buttonPanel
 id center_vertical

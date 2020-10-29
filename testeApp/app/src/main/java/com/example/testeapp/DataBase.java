@@ -20,9 +20,10 @@ public class DataBase extends SQLiteOpenHelper {
      private static final String COLUMN_EMAIL = "Email";
      private static final String COLUMN_NAME = "Name";
      private static final String COLUMN_PASSWORD = "Password";
+     private String tb_Clients;
 
 
-    public DataBase(@Nullable Context context) {
+     public DataBase(@Nullable Context context) {
         super(context, NAME_BASE, null, VERSION_BASE);
 
     }
@@ -39,7 +40,7 @@ public class DataBase extends SQLiteOpenHelper {
 
     }
     /* CRUD HERE */
-    Void addClient(Client client) {
+    void addClient(Client client) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -51,7 +52,7 @@ public class DataBase extends SQLiteOpenHelper {
         values.put(COLUMN_ADRESS, client.getAdress());
 
 
-        db.insert(tb_Clients, null, Values);
+        long insert = db.insert(tb_Clients, null, values);
         db.close();
 
     }

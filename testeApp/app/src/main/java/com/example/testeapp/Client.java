@@ -6,15 +6,16 @@ public class Client {
  public Client(){
 
  }
- //CONSTRUCTOR
- public Client(Integer_cpf, Integer_date, String_name, String_adress, String_email, String_pswd){
-    this.cpf = _cpf;
-    this.date =_date;
-    this.name =_name;
-    this.adress =_adress;
-    this.email =_email;
-    this.pswd =_pswd;
- }
+    //CONSTRUCTOR
+    public Client (Integer _date, Integer _cpf, String _name, String _adress, String _email, String _pswd){
+        this.cpf = _cpf;
+        this.date =_date;
+        this.name =_name;
+        this.adress =_adress;
+        this.email =_email;
+        this.pswd =_pswd;
+    }
+
     // METHODS GETERS AND SETERS
     public int getCpf() {
         return cpf;
